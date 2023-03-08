@@ -1,70 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Startsida</title>
-</head>
-<body>
-<header>
-    <img src="/Lukas-Janfelt-transparant.png" alt="logo" width="200vw" height="180vh">
-    <h1>hem</h1>
-    <picture>
-        <source media="(perfers-color-scheme)" srcset="">
-    </picture>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/Lukas-Janfelt-transparant.png"
+        alt="logo"
+        width="200vw"
+        height="180vh"
+      />
+      <h1>Hem</h1>
+      <picture>
+        <source media="(perfers-color-scheme)" srcset="" />
+      </picture>
+    </header>
 
-</header>
-
-<!--Ett bildgalleri med minst 4 projekt. Varje projekt i galleriet ska ha ett foto (avatar) & en rubrik minst (beskrivning kan vara bra).
+    <!--Ett bildgalleri med minst 4 projekt. Varje projekt i galleriet ska ha ett foto (avatar) & en rubrik minst (beskrivning kan vara bra).
 Ni ska ha flexbox & grid eller fler för galleriet.-->
-<nav>
-    <div class="navbar">
+    <nav>
+      <div class="navbar">
         <ul>
-            <!--navigastion bar -->
-            <li><a href="/index.html" id="hem"> Hem</a></li>
-            <li><a href="/info.html" id="info"> Info </a></li>
-            <li><a href="/projekt-1.html" id="projekt-1" target="_blank">projekt 1</a></li>
-            <li><a href="/projekt-2.html" id="projekt-2" target="_blank">projekt 2</a></li>
-            <li><a href="/projekt-3.html" id="projekt-3" target="_blank">projekt 2</a></li>
-            <li><a href="/projekt-4.html" id="projekt-4" target="_blank">projekt 4</a></li>
+          <!--navigastion bar -->
+          <li><a href="/index.html" id="hem"> Hem</a></li>
+          <li><a href="/info.html" id="info"> Info </a></li>
+          <li>
+            <a href="/projekt-1.html" id="projekt-1" target="_blank"
+              >projekt 1</a
+            >
+          </li>
+          <li>
+            <a href="/projekt-2.html" id="projekt-2" target="_blank"
+              >projekt 2</a
+            >
+          </li>
+          <li>
+            <a href="/projekt-3.html" id="projekt-3" target="_blank"
+              >projekt 2</a
+            >
+          </li>
+          <li>
+            <a href="/projekt-4.html" id="projekt-4" target="_blank"
+              >projekt 4</a
+            >
+          </li>
         </ul>
+      </div>
+    </nav>
+    <main>
+    <section class="container">
+
+       <div class="projekt">
+        <div class="image-projekt bild-1"></div>
+        <h2>Projekt 1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error deserunt officiis, facilis inventore amet expedita neque eos nostrum laboriosam, cumque earum molestias nihil impedit natus blanditiis aut ab repudiandae asperiores.</p>
     </div>
-</nav>
-<main>
-
-</main>
-
-<footer>
-    <div class="social-icon">
-        <ul>
-            <!--socialamedier och kontakter-->
-            <li>
-                <a
-                    href="https://www.facebook.com/lukas.janfelt"
-                    target="_blank"
-                >
-                    <i class="fab fa-facebook"></i
-                ></a>
-            </li>
-            <li>
-                <a
-                    href="https://www.instagram.com/lukasjanfelt/?next=%2F"
-                    target="_blank"
-                >
-                    <i class="fab fa-instagram"></i
-                ></a>
-            </li>
-        </ul>
-    </div>
-    <script
-        src="https://kit.fontawesome.com/dec59ca4bb.js"
-        crossorigin="anonymous"
-    ></script>
-</footer>
-
 
     
-</body>
+    <div class="projekt">
+        <div class="image-projekt bild-2"></div>
+        <h2>Projekt 2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error deserunt officiis, facilis inventore amet expedita neque eos nostrum laboriosam, cumque earum molestias nihil impedit natus blanditiis aut ab repudiandae asperiores.</p>
+    </div>
+
+    
+    <div class="projekt">
+        <div class="image-projekt bild-3"></div>
+        <h2>Projekt 3</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error deserunt officiis, facilis inventore amet expedita neque eos nostrum laboriosam, cumque earum molestias nihil impedit natus blanditiis aut ab repudiandae asperiores.</p>
+    </div>
+
+    
+    <div class="projekt">
+        <div class="image-projekt bild-4"></div>
+        <h2>Projekt 4</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error deserunt officiis, facilis inventore amet expedita neque eos nostrum laboriosam, cumque earum molestias nihil impedit natus blanditiis aut ab repudiandae asperiores.</p>
+    </div>
+    </div>
+
+    </section>
+    </main>
+
+    <footer>
+      <div class="social-icon">
+        <ul>
+          <!--socialamedier och kontakter-->
+          <li>
+            <a href="https://www.facebook.com/lukas.janfelt" target="_blank">
+              <i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/lukasjanfelt/?next=%2F"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/dec59ca4bb.js"
+        crossorigin="anonymous"
+      ></script>
+    </footer>
+  </body>
 </html>

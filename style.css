@@ -27,7 +27,7 @@ body{
 
 @media screen and (min-width:420px){
     body{
-        background-color: red;
+        background-color: rgb(42, 64, 105);
     }
 }
 
@@ -124,3 +124,5 @@ body{
         animation-duration: 0.75s;
         animation-timing-function: cubic-bezier(.71,0,.33,1.56);
     }
+
+
