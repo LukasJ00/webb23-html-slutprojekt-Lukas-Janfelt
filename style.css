@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul{
+    list-style: none;
+    background: white;             /*navbar utseende*/
+    padding: 0x;
+    margin: 0;
+    text-align: center;
+    
+    }
+
+    .navbar li{
+        display: inline-block;  /*navbar funktion*/
+    }
+    .navbar a{
+        text-decoration: none;
+        color: #cc9900;
+        width: 100%;
+        display: block;         /*navbar länk layout*/
+        padding: 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
