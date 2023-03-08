@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-h1::after{
+h1::before{
     content: "LIGHT MODE";
 }
 
@@ -10,7 +10,7 @@ body{
     background-color: rgb(218, 218, 148);
 }
 @media (prefers-color-scheme-dark){
-    h1::before
+    h1::after
 
 body{
     background-color: yellow;
