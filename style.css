@@ -45,7 +45,7 @@ body{
     }
     .navbar a{
         text-decoration: none;
-        color: #cc9900;
+        color: #659de6;
         width: 100%;
         display: block;         /*navbar länk layout*/
         padding: 15px;
@@ -96,7 +96,7 @@ body{
     }
     
     .social-icon ul li a:hover{
-        color: #fff;                /*icon hover*/
+        color: #b7c6e1;                /*icon hover*/
         transform: translate(0,-10%);
     }
     .social-icon ul li a{
