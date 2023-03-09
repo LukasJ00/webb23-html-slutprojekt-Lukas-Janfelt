@@ -20,14 +20,14 @@ body{
     }
     
     body{
-        background-color: rgb(61, 62, 90);
+        background-color: rgb(230, 231, 247);
     }
 
 }
 
 @media screen and (min-width:420px){
     body{
-        background-color: rgb(42, 64, 105);
+        background-color: white;
     }
 }
 
@@ -55,7 +55,60 @@ body{
         text-align: center;
     }
 
+    .logo{
+        
+    }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @keyframes motionblur {
         0% {
           filter: blur(0px);
@@ -69,9 +122,9 @@ body{
           filter: blur(0px);
         }
       }
-      
     
-    .social-icon ul{
+    
+      .social-icon ul{
         border: solid 2 px black;
         margin-top: 10vmax;
         position:relative;
