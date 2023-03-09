@@ -21,7 +21,6 @@ a{
     
     width: 100%;
     margin: 0 auto;
-    background-color:rgb(20, 131, 35);
     background:
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
     linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
@@ -47,9 +46,6 @@ a{
     align-items: center;
     gap: 60px;
 }
-.nav-branding{
-    font-size: 2rem;
-}
 
 .nav-link{
     transition: 0.7s ease;
@@ -69,7 +65,7 @@ a{
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease-in-out;
     background-color: white;
 
@@ -112,6 +108,25 @@ a{
 
 }
 
+
+
+
+
+.grid-container{
+    border: 1px solid black;
+    margin: 1rem 0;
+    display: grid;
+   
+    grid-template-areas: repeat(auto-fit, minmax(150px 1fr));
+    grid-auto-columns: 30vmax 30vmax; 
+    justify-content: center;
+}
+
+.grid-item{
+    border: 1px solid black;
+    padding: 10px;    
+    grid-auto-flow: column;           
+    }
 
 
 
