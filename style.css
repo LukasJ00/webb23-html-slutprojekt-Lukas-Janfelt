@@ -189,6 +189,72 @@ img,picture{
     justify-content: center;
 }
 
+.info{
+  border: 3px solid hotpink;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px 1fr));
+  padding: 1rem;    
+  justify-content: center;
+  align-items: center;
+}
+.porträtt{
+  border: 3px solid hotpink;
+  max-width: 30vw;
+  min-width: 30vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.text_bold{
+  border: 3px solid hotpink;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  max-width: 25vw;
+}
+
+.text_normal{
+  border: 3px solid hotpink;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  max-width: 25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes motionblur {
     0% {
       filter: blur(0px);
