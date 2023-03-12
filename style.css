@@ -9,6 +9,9 @@
   body{
     font-family: 'poppins', sans-serif;       /*body font & size*/
     font-size: 2rem 0;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
   }
   
   header{
@@ -124,7 +127,7 @@
     grid-template-columns: 1fr;
   }
   .card{
-    border: 3px solid hotpink;
+    
     
   }
 img,picture{
@@ -189,8 +192,9 @@ img,picture{
     justify-content: center;
 }            
 
+
+/*info sida*/
 .info{
-  border: 3px solid hotpink;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px 1fr));
   padding: 1rem;    
@@ -198,7 +202,6 @@ img,picture{
   align-items: center;
 }
 .porträtt{
-  border: 3px solid hotpink;
   max-width: 30vw;
   min-width: 30vh;
   display: block;
@@ -212,7 +215,6 @@ img,picture{
   border-radius: 2rem;
 }
 .text_bold{
-  border: 3px solid hotpink;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
@@ -223,10 +225,67 @@ img,picture{
 }
 
 .text_normal{
-  border: 3px solid hotpink;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
   max-width: 30vw;
   min-width: 30vh;
 }
+/*projekt template*/
+.row-1{
+  border: 3px solid hotpink;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  
+}
+
+.row-1 .left{
+  border: 3px solid hotpink;
+  overflow: hidden;
+}
+
+.row-1 .left img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.row-1 .right{
+  border: 3px solid hotpink;
+  display: flex;
+  align-items: center;
+}
+
+.row-1 .right .content{
+  padding-left: 1rem;
+}
+.row-1 .right .content p{
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 991px){
+  .row-1 .right .content{
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px ){
+  .row-1{
+    display: grid;
+    place-items: center;
+    width: 90%;
+
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+}
+
+
+
