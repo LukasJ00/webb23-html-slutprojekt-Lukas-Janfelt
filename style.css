@@ -28,9 +28,25 @@
       --foregrund: var(--clr-light);
     }
     p{
-      color:#fffdfa;
+      color:var(--clr-secondary)
+    }
+    .gallery-text{
+      color:var(--clr-secondary)
+    }
+    .text_normal{
+      color:var(--clr-secondary)
+    }
+    .text_bold{
+      color:var(--clr-secondary)
+    }
+    .content{
+      color:var(--clr-secondary);
+    }
+    .content-2{
+      color: var(--clr-secondary);
     }
   }
+
   
   body{
     font-family: 'poppins', sans-serif;       /*body font & size*/
