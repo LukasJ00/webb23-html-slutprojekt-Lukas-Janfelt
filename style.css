@@ -115,33 +115,8 @@
       left: 0;
     }
   }
-
-  /*.gallery{
-    max-width: 100rem;
-    margin-inline: auto;
-    padding-inline: 2rem;
-  }
-
-  .product-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .card{
-    
-    
-  }
-img,picture{
-  max-width: 100%;
-  display: block;
-}
-  .card_img{
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
-  */
-
   
+  /*bild gallery*/
 .gallery{
     margin-top: 1rem;
     display: grid;
@@ -166,9 +141,10 @@ img,picture{
     img,picture{
       max-width: 100%;
       display: block;
+      border-radius: 2rem;
     }
 
-    .img-gallery{
+.img-gallery{
         min-width: 35vw;
         height: 58vh;             
         border-radius: 1rem;
@@ -233,7 +209,6 @@ img,picture{
 }
 /*projekt template*/
 .row-1{
-  border: 3px solid hotpink;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -243,26 +218,30 @@ img,picture{
 }
 
 .row-1 .left{
-  border: 3px solid hotpink;
   overflow: hidden;
+  padding: 1rem;
 }
 
-.row-1 .left img{
+.row-1 .left .img{
   max-width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 2em;
+  border-radius: 2rem;
 }
 
 .row-1 .right{
-  border: 3px solid hotpink;
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .row-1 .right .content{
-  padding-left: 1rem;
+  margin-left: 0.5em;
+  padding: 2em;
+  border-radius: .5rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5)
 }
 .row-1 .right .content p{
   font-size: 16px;
@@ -274,7 +253,6 @@ img,picture{
   .row-1 .right .content{
     padding-left: 0;
   }
-
 }
 @media (max-width: 768px ){
   .row-1{
@@ -288,24 +266,26 @@ img,picture{
   }
   
 }
-
+/*rad 2*/
 .row-2{
-  border: 3px solid hotpink;
+ padding: 1rem;
   margin-top: 5rem;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*responsiv grid*/
   grid-gap: 1rem;
   align-items: center;
   
 }
 
 .content-2{
-  border: 3px solid hotpink;
+  padding: 2em;
+  border-radius: .5rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5)
 }
 
 .row-2 .vänster{
-  border: 3px solid hotpink;
+  padding: 1rem;
 }
 
 .row-2 .vänster img{
@@ -315,17 +295,16 @@ img,picture{
   max-height: 60vh;
   object-fit: cover;
   border-radius: 2rem;
-  padding: 1rem;
+
   justify-content: center;
 }
 
 .row-2 .mitten{
-    border: 3px solid hotpink;
+padding: 1rem;
 
 }
 
 .row-2 .mitten img{
-  border: 3px solid hotpink;
   width: 50vw;
   height: 100%;
   object-fit: cover;
@@ -335,7 +314,7 @@ img,picture{
 }
 
 .row-2 .höger{
-  border: 3px solid hotpink;
+ padding: 1rem;
 }
 
 .row-2 .höger img{
