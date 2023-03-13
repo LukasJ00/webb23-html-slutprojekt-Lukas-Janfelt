@@ -407,7 +407,9 @@ padding: 1rem;              /* mitten culumn padding*/
   
 }
 
-
+.social-media-links{
+  position: absolute;
+}
 /*socialamedier*/
 
 @keyframes motionblur {
