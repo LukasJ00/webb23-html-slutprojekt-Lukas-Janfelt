@@ -10,7 +10,7 @@
       --clr-light: #e2d1f9;  
       --clr-dark:#317773;
       --clr-primary:#262626;
-      --clr-secondary: #fffdfa;
+      --clr-secondary: #fffdfa;             /*orginal färger*/
       ---clr-shadow: rgba(0, 0, 0, 0.5);
 
       --foreground: var(--clr-dark);
@@ -22,7 +22,7 @@
       --clr-dark:#fffdfa; 
       --clr-primary:#262626;
       --clr-secondary: #fffdfa;
-      ---clr-shadow: rgba(0, 0, 0, 0.5);
+      ---clr-shadow: rgba(0, 0, 0, 0.5);        /*dark mode*/
 
       --background: var(--clr-dark);
       --foregrund: var(--clr-light);
@@ -55,14 +55,14 @@
   }
   h1{
     color: var(--foreground);
-    display: flex;
+    display: flex;                /*rubrik layout*/
     justify-content: center;
   }
   h2{
-    color: var(--foreground);
+    color: var(--foreground);    /* subrubrik färg*/
   }
   p{
-    color: var(--clr-primary);
+    color: var(--clr-primary);  /*text färg*/
   }
   
   .container{
@@ -73,7 +73,7 @@
     background:                                                 
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
     linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,                   /*container funktion/layout*/
     linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
     linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
     linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
@@ -91,21 +91,21 @@
   
   .nav-menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   /*nav menyns layout*/ 
     align-items: center;
     gap: 60px;
   }
   
   .nav-link{
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-out;   /*nav länkar transition*/
   }
   
   .nav-link:hover{
-    color:var(--clr-dark);
+    color:var(--clr-dark);     /*läng hover färg*/ 
   }
   
   .hamburger{
-    display: none;
+    display: none;             /*haburgare form*/    
     cursor: pointer;
   }
   
@@ -114,7 +114,7 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;  /*navbar funktion/layout*/
     transition: all 0.3s ease;
     background-color: var(--clr-secondary);
   }
@@ -125,7 +125,7 @@
     }
   
     .hamburger.active .bar:nth-child(2){
-      opacity: 0;
+      opacity: 0;                                   /*hamburger form mobile*/
     }
     .hamburger.active .bar:nth-child(1){
       transform: translateY(8px) rotate(45deg);
@@ -139,7 +139,7 @@
       left: -100%;
       top: 70px;
       gap: 0;
-      flex-direction: column;
+      flex-direction: column;                  /*nav layout mobile*/
       background-color: var(--clr-primary);
       width: 100%;
       text-align: center;
@@ -147,10 +147,10 @@
     }
   
     .nav-item{
-      margin: 16px 0;
+      margin: 16px 0;       /*margin*/
     }
   
-    .nav-menu.active{
+    .nav-menu.active{    /*position*/
       left: 0;
     }
   }
@@ -159,7 +159,7 @@
 .gallery{
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);  /*grid gallery columns*/
   grid-gap: 1rem;
   align-items: center;
   margin: 1rem;  
@@ -167,12 +167,12 @@
 }
 
 .gallery-item{
-    justify-content: center;
+    justify-content: center;      /*gallery layout*/ 
     grid-auto-flow: column;      
     }
 
     img,picture{
-      max-width: 100%;
+      max-width: 100%;            /*bilder*/ 
       display: block;
       border-radius: 2rem;
     }
