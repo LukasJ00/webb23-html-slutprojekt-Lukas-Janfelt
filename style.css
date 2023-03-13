@@ -7,29 +7,38 @@
     box-sizing: border-box;
   }
   :root{
---clr-light: #e2d1f9;  
---clr-dark:#317773;
---clr-primary:#262626;
+      --clr-light: #e2d1f9;  
+      --clr-dark:#317773;
+      --clr-primary:#262626;
+      --clr-secondary: #fffdfa;
+      ---clr-shadow: rgba(0, 0, 0, 0.5);
 
---foreground: var(--clr-dark);
---backgrund: var(--clr-light);
+      --foreground: var(--clr-dark);
+      --backgrund: var(--clr-light);
   }
   @media(prefers-color-scheme: dark){
     :root{
-      --clr-light: #fff;
-      --clr-dark: #262626;
+      --clr-light: #262626;  
+      --clr-dark:#fffdfa; 
+      --clr-primary:#262626;
+      --clr-secondary: #fffdfa;
+      ---clr-shadow: rgba(0, 0, 0, 0.5);
 
       --background: var(--clr-dark);
       --foregrund: var(--clr-light);
     }
+    p{
+      color:#fffdfa;
+    }
   }
+  
   body{
     font-family: 'poppins', sans-serif;       /*body font & size*/
     font-size: 2rem 0;
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: var(--clr-light);
+    background:var(--backgrund)
   }
   
   header{
@@ -41,7 +50,7 @@
   }
   
   a{
-    color: white;
+    color:var(--clr-secondary);
     text-decoration: none;            /*länkar layout*/
   }
   h1{
@@ -107,7 +116,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background-color: white;
+    background-color: var(--clr-secondary);
   }
   
   @media(max-width:1024px){
@@ -131,7 +140,7 @@
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: #262626;
+      background-color: var(--clr-primary);
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -176,6 +185,8 @@
   object-fit: cover;
   border-radius: 2rem;
   justify-content: center;
+  object-position: center;
+  position: relative;
   }
 
   @media (max-width: 991px){
@@ -198,7 +209,10 @@
 .gallery-text{
     display: flex;
     justify-content: left;
-    padding: 1rem
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 10px 10px 30px var(---clr-shadow);
+  
 }        
 
 
@@ -222,6 +236,9 @@
 
 .porträtt-img{
   border-radius: 2rem;
+  padding: 2em;
+  border-radius: .5rem;
+  box-shadow: 10px 10px 30px var(---clr-shadow);
 }
 .text_bold{
   display: flex;
@@ -239,6 +256,9 @@
   padding: 0.5rem;
   max-width: 30vw;
   min-width: 30vh;
+  padding: 2em;
+  border-radius: .5rem;
+  box-shadow: 10px 10px 30px var(---clr-shadow);
 }
 /*projekt template*/
 .row-1{
@@ -274,7 +294,7 @@
   margin-left: 0.5em;
   padding: 2em;
   border-radius: .5rem;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5)
+  box-shadow: 10px 10px 30px var(---clr-shadow);
 }
 .row-1 .right .content p{
   font-size: 16px;
@@ -314,7 +334,7 @@
 .content-2{
   padding: 2em;
   border-radius: .5rem;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5)
+  box-shadow: 10px 10px 30px var(---clr-shadow);
 }
 
 .row-2 .vänster{
@@ -329,6 +349,8 @@
   object-fit: cover;
   border-radius: 2rem;
   justify-content: center;
+  object-position: center;
+  
 }
 
 .row-2 .mitten{
@@ -355,6 +377,7 @@ padding: 1rem;
   height: 100%;
   object-fit: cover;
   border-radius: 2rem;
+  margin-right: 1.5rem;
   
 }
 
@@ -377,7 +400,7 @@ padding: 1rem;
 
 
 .social-icon ul{
-  border: solid 2 px black;
+  border: solid 2 px var(--clr-primary);
   margin-top: 10vmax;
   position:relative;
   justify-content: center;
@@ -396,7 +419,7 @@ padding: 1rem;
   font-size: 35px;
   line-height: 60px;      /*iconer layout och transition*/
   transition: 2000ms;
-  color: black;
+  color: var(--clr-primary);
 
 }
 
@@ -413,7 +436,7 @@ padding: 1rem;
   border-radius: 50%;             /*icon utseende och transition*/
   background-color: #fff;
   text-align: center;
-  box-shadow: 0 4px 8 px 0 rgba(0,0,0.2);
+  box-shadow: 0 4px 8 px var(---clr-shadow);
   transition: 600ms;
 }
 
