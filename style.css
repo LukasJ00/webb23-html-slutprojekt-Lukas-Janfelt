@@ -96,9 +96,9 @@
   }
   
   /*header navbar layout*/
-  .container{                  
+  .Top-bar{                  
     width: 100%;
-    margin: 0 auto;   /*container layout*/
+    margin: 0 auto;   /*Top-bar layout*/
     padding-right: 1rem;
     background:                                                 
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
