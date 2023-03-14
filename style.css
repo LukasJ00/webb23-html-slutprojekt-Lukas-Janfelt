@@ -227,7 +227,8 @@
 .gallery-text{
     display: flex;
     justify-content: left;
-    padding: 1rem;                  /*gallery text box*/
+    padding: 1rem;     
+    max-width: 40rem;             /*gallery text box*/
     border-radius: .5rem;
     box-shadow: 10px 10px 30px var(---clr-shadow);
   
