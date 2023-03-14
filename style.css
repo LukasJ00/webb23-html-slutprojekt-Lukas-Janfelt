@@ -407,9 +407,6 @@ padding: 1rem;              /* mitten culumn padding*/
   
 }
 
-.social-media-links{
-  position: absolute;
-}
 /*socialamedier*/
 
 @keyframes motionblur {
@@ -428,7 +425,7 @@ padding: 1rem;              /* mitten culumn padding*/
 
 
 .social-icon ul{
-  border: solid 2 px var(--clr-primary);
+  border: solid 2px var(--clr-primary);
   margin-top: 10vmax;
   position:relative;
   justify-content: center;
@@ -464,7 +461,7 @@ padding: 1rem;              /* mitten culumn padding*/
   border-radius: 50%;             /*icon utseende och transition*/
   background-color: #fff;
   text-align: center;
-  box-shadow: 0 4px 8 px var(---clr-shadow);
+  box-shadow: 0 4px 8px var(---clr-shadow);
   transition: 600ms;
 }
 
