@@ -423,9 +423,8 @@ padding: 1rem;              /* mitten culumn padding*/
   }
 }
 
-
-.social-icon ul{
-  border: solid 2px var(--clr-primary);
+.social ul{
+ 
   margin-top: 10vmax;
   position:relative;
   justify-content: center;
@@ -433,26 +432,26 @@ padding: 1rem;              /* mitten culumn padding*/
   left: 50%;
   transform: translate(-50%,-50%);
   display: flex;
-
 }
-.social-icon li{
+
+.social li{
   list-style: none;       /*sociala medier lista*/
   margin: 0 15px;
-
 }
-.social-icon li .fab{
+
+.social li .fa-brands{
   font-size: 35px;
   line-height: 60px;      /*iconer layout och transition*/
   transition: 2000ms;
-  color: var(--clr-primary);
-
+  color: black;
 }
 
-.social-icon ul li a:hover{
+.social ul li a:hover{
   color: #fff;                /*icon hover*/
   transform: translate(0,-10%);
 }
-.social-icon ul li a{
+
+.social ul li a{
   position: relative;
   display: block;
   bottom: 0;
@@ -461,18 +460,26 @@ padding: 1rem;              /* mitten culumn padding*/
   border-radius: 50%;             /*icon utseende och transition*/
   background-color: #fff;
   text-align: center;
-  box-shadow: 0 4px 8px var(---clr-shadow);
+  box-shadow: 0 4px 8px;
   transition: 600ms;
 }
 
-.social-icon ul li:nth-child(1) a:hover{
+.social ul li:nth-child(1) a:hover{
   background-color: rgb(56, 121, 218);   /* icon byta färg vid hover*/
   animation-name: motionblur;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(.71,0,.33,1.56);
 }
-.social-icon ul li:nth-child(2) a:hover{
+
+.social ul li:nth-child(2) a:hover{
   background-color:rgb(182, 80, 182);  /*icon byta färg vid hover*/
+  animation-name: motionblur;
+  animation-duration: 0.75s;
+  animation-timing-function: cubic-bezier(.71,0,.33,1.56);
+}
+
+.social ul li:nth-child(3) a:hover{
+  background-color:rgb(10, 102, 194);  /*icon byta färg vid hover*/
   animation-name: motionblur;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(.71,0,.33,1.56);
