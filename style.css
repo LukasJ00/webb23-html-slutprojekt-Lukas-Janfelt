@@ -81,7 +81,7 @@
   }
   @keyframes slidein{
     from {
-      transform: translateX(100%);
+      transform: translateX(100%);    /*animation slidein*/
     }
   
     to {
@@ -95,6 +95,7 @@
     color: var(--clr-primary);  /*text färg*/
   }
   
+  /*header navbar layout*/
   .container{
                       /*container layout*/
     width: 100%;
@@ -189,6 +190,7 @@
   
   /*bild gallery*/
 .gallery{
+  margin-top: 4rem;
   display: grid;
   width: 100%;
   padding-top: 4rem;
@@ -287,7 +289,7 @@
 
 @keyframes myfirst{
 0%{
-  transform: rotate(0deg);
+  transform: rotate(0deg);      /*animation snurra*/
 }
 100%{
   transform: rotate(360deg);
@@ -309,6 +311,7 @@
 
 /*projekt template*/
 .row-1{
+  margin-top: 4rem;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);   /*rad 1 grid columns*/
