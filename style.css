@@ -265,7 +265,7 @@
     align-items: center;
     margin: 1rem;  
   }
-
+  
   #porträtt{
     border-radius: 2rem;
     padding: 2em;                   /*profilbild layout*/
@@ -282,6 +282,7 @@
     font-weight: bold;
     animation: myfirst 3s;
   }
+
   @keyframes myfirst{
     0%{
       transform: rotate(0deg);      /*animation snurra*/
