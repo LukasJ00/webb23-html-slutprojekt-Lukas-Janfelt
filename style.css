@@ -267,15 +267,17 @@
     margin: 1rem;  
   }
   
-  #porträtt{
-    border-radius: 2rem;
-    padding: var(--div-padding);                   /*profilbild layout*/
+  .porträtt{
+    grid-gap:2em;
+    border-radius: 2rem;         /*profilbild layout*/
     border-radius: .5rem;
-    box-shadow: 10px 10px 30px var(--clr-shadow);
   }
+
+  
   .text-bold{
     display: flex;
     justify-content: center;
+    
     margin: var(--div-margin);
     padding: var(--div-padding);          /*bold text formation*/
     max-width: 30vw;
