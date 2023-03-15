@@ -213,7 +213,8 @@
   
     img,picture{
         max-width: 100%;            /*bilder*/ 
-       display: block;
+        height: auto;
+        display: block;
         border-radius: 2rem;
       }
   
