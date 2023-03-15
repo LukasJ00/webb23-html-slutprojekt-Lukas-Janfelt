@@ -96,6 +96,12 @@
   p{
     color: var(--clr-primary);  /*text färg*/
   }
+
+  img,picture{
+    max-width: 100%;            /*bilder*/ 
+    display: block;
+    border-radius: 2rem;
+  }
   
   /*header navbar layout*/
   .Top-bar{                  
@@ -179,7 +185,7 @@
     }
   
     .nav-item{
-      margin: 16px 0;       /*margin*/
+      margin: 4px 0;       /*margin*/
     }
   
     .nav-menu.active{    /*position*/
@@ -187,10 +193,72 @@
     }
   }
 
- 
+/*gallery*/
+  .gallery{
+    margin-top: 4rem;
+    display: grid;
+    width: 100%;
+    padding-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);  /*grid gallery columns*/
+    grid-gap: 1rem;
+    align-items: center;
+    margin: 1rem;  
+     
+  }
   
-  /*bild gallery*/
-  .container{
+  .gallery-item{
+      justify-content: center;      /*gallery layout*/ 
+      grid-auto-flow: column;      
+      }
+  
+    img,picture{
+        max-width: 100%;            /*bilder*/ 
+       display: block;
+        border-radius: 2rem;
+      }
+  
+  .img-gallery{
+    width: 100%;
+    max-width: 60vw;
+    height: 100%;
+    max-height: 60vh;
+    object-fit: cover;        /*bilder gallery layout*/
+    border-radius: 2rem;
+    justify-content: center;
+    object-position: center;
+    position: relative;
+    }
+  
+    @media (max-width: 991px){
+      .gallery-item{
+        padding-left: 0;
+      }
+    }
+    @media (max-width: 768px ){    /*media breakponint mobil gallery*/
+       .row-1{
+        display: grid;
+        place-items: center;
+        width: 90%;
+    
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+      }
+    }
+  
+  .gallery-text{
+      display: flex;
+      justify-content: left;
+      padding: 1rem;     
+      max-width: 40rem;             /*gallery text box*/
+      border-radius: .5rem;
+      box-shadow: 10px 10px 30px var(--clr-shadow);
+    
+  }        */
+ 
+
+/*info sida*/
+.container{
     margin-top: 4rem;
     width: 100%;
     padding-top: 4rem;
@@ -198,77 +266,40 @@
     margin: 1rem;  
   }
 
-  img,picture{
-    max-width: 100%;            /*bilder*/ 
-    display: block;
+  #porträtt{
     border-radius: 2rem;
+    padding: 2em;                   /*profilbild layout*/
+    border-radius: .5rem;
+    box-shadow: 10px 10px 30px var(--clr-shadow);
   }
+  .text-bold{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;          /*bold text formation*/
+    max-width: 30vw;
+    min-width: 30vh;
+    font-size: larger;
+    font-weight: bold;
+    animation: myfirst 3s;
+  }
+  @keyframes myfirst{
+    0%{
+      transform: rotate(0deg);      /*animation snurra*/
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+    }
 
-  #text-box{
+  .text-normal{
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 1rem;     
-    max-width: 40rem;             /*gallery text box*/
+    max-width: 40rem;             /*info text box*/
    border-radius: .5rem;
     box-shadow: 10px 10px 30px var(--clr-shadow);
   }
-
-
-/*info sida*/
-.info{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px 1fr));   /*grid columns info*/
-  padding: 1rem;    
-  justify-content: center;
-  align-items: center;
-}
-.porträtt{
-  max-width: 30vw;
-  min-width: 30vh;
-  display: block;            /*profil bild formation*/  
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  
-}
-
-.porträtt-img{
-  border-radius: 2rem;
-  padding: 2em;                   /*profilbild layout*/
-  border-radius: .5rem;
-  box-shadow: 10px 10px 30px var(--clr-shadow);
-}
-.text_bold{
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem;          /*bold text formation*/
-  max-width: 30vw;
-  min-width: 30vh;
-  font-size: larger;
-  font-weight: bold;
-  animation: myfirst 3s;
-}
-
-@keyframes myfirst{
-0%{
-  transform: rotate(0deg);      /*animation snurra*/
-}
-100%{
-  transform: rotate(360deg);
-}
-}
-
-.text_normal{
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem;
-  max-width: 30vw;            /*normal text formation*/
-  min-width: 30vh;
-  padding: 2em;
-  border-radius: .5rem;
-  box-shadow: 10px 10px 30px var(--clr-shadow);
-}
 
 
 
