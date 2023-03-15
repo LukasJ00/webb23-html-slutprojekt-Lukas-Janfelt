@@ -26,30 +26,36 @@
     :root{
       --clr-light: #262626;  
       --clr-dark:#fffdfa; 
-      --clr-primary:#262626;
-      --clr-secondary: #fffdfa;
+      --clr-primary:#fffdfa;
+      --clr-secondary: #262626;
       --clr-shadow: rgba(0, 0, 0, 0.5);        /*dark mode*/
-
+      --clr-grey: #808080;
       --background: var(--clr-dark);
       --foregrund: var(--clr-light);
     }
     p{
-      color:var(--clr-secondary);
+      color:var(--clr-primary);
     }
     .gallery-text{
-      color:var(--clr-secondary);
+      color:var(--clr-primary);
     }
     .text_normal{
-      color:var(--clr-secondary);
+      color:var(--clr-primary);
     }
     .text_bold{
-      color:var(--clr-secondary);
+      color:var(--clr-primary);
     }
     .content{
-      color:var(--clr-secondary);
+      color:var(--clr-primary);
     }
     .content-2{
-      color: var(--clr-secondary);
+      color: var(--clr-primary);
+    }
+    img,picture{
+      opacity: 0.1;
+    }
+    .nav-link:hover{
+        color: var(--clr-grey);
     }
   }
 
