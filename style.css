@@ -10,7 +10,7 @@
       --clr-light: #e2d1f9;  
       --clr-dark:#317773;
       --clr-primary:#262626;
-      --clr-secondary: #fffdfa;             /*orginal färger*/
+      --clr-secondary: #fffdfad3;             /*orginal färger*/
       --clr-shadow: rgba(0, 0, 0, 0.5);
       --clr-facebook:  rgb(56, 121, 218);
       --clr-instagram: rgb(182, 80, 182); 
@@ -25,11 +25,13 @@
   @media(prefers-color-scheme: dark){
     :root{
       --clr-light: #262626;  
-      --clr-dark:#fffdfa; 
-      --clr-primary:#fffdfa;
+      --clr-dark:#fffdfad3; 
+      --clr-primary:#fffdfad3; 
       --clr-secondary: #262626;
       --clr-shadow: rgba(0, 0, 0, 0.5);        /*dark mode*/
       --clr-grey: #808080;
+
+
       --background: var(--clr-dark);
       --foregrund: var(--clr-light);
     }
@@ -52,11 +54,24 @@
       color: var(--clr-primary);
     }
     img,picture{
-      opacity: 0.1;
+      opacity: 0.6;
+      background-color: var(--clr-secondary);
     }
     .nav-link:hover{
-        color: var(--clr-grey);
+      color:var(--clr-grey);    
     }
+   .nav-item{
+  color:var(--clr-grey);
+   }
+
+    .hamburger{
+      background-color: var(--clr-primary);
+    }
+    a{
+      color:var(--clr-grey);
+                                 
+    }
+   
   }
 
   
