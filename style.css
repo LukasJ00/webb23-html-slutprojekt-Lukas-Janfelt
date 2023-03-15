@@ -19,7 +19,8 @@
       --foreground: var(--clr-dark);
       --backgrund: var(--clr-light);
 
-      
+      --div-margin: 2rem;
+      --div-padding: 2rem;
   }
   @media(prefers-color-scheme: dark){
     :root{
@@ -78,7 +79,7 @@
     color: var(--foreground);
     display: flex;                /*rubrik layout*/
     justify-content: center;
-    padding-top: 2rem;  
+    padding: var(--div-padding);
     animation: slidein 2s;
   }
   @keyframes slidein{
@@ -195,14 +196,13 @@
 
 /*gallery*/
   .gallery{
-    margin-top: 4rem;
     display: grid;
     width: 100%;
-    padding-top: 4rem;
+    padding:var(--div-padding);
     grid-template-columns: repeat(2, 1fr);  /*grid gallery columns*/
     grid-gap: 1rem;
     align-items: center;
-    margin: 1rem;  
+    margin:var(--div-margin);  
      
   }
   
@@ -249,33 +249,34 @@
   .gallery-text{
       display: flex;
       justify-content: left;
-      padding: 1rem;     
+      padding: var(--div-padding);     
       max-width: 40rem;             /*gallery text box*/
       border-radius: .5rem;
       box-shadow: 10px 10px 30px var(--clr-shadow);
     
-  }        */
+  }       
  
 
 /*info sida*/
 .container{
     margin-top: 4rem;
     width: 100%;
-    padding-top: 4rem;
+    padding:var(--div-padding);
     align-items: center;
     margin: 1rem;  
   }
   
   #porträtt{
     border-radius: 2rem;
-    padding: 2em;                   /*profilbild layout*/
+    padding: var(--div-padding);                   /*profilbild layout*/
     border-radius: .5rem;
     box-shadow: 10px 10px 30px var(--clr-shadow);
   }
   .text-bold{
     display: flex;
     justify-content: center;
-    padding: 0.5rem;          /*bold text formation*/
+    margin: var(--div-margin);
+    padding: var(--div-padding);          /*bold text formation*/
     max-width: 30vw;
     min-width: 30vh;
     font-size: larger;
@@ -296,7 +297,8 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 1rem;     
+    padding: var(--div-padding);   
+    margin: var(--div-margin);  
     max-width: 40rem;             /*info text box*/
    border-radius: .5rem;
     box-shadow: 10px 10px 30px var(--clr-shadow);
@@ -317,7 +319,7 @@
 
 .row-1 .left{
   overflow: hidden;   /*vänster culumn form*/
-  padding: 1rem;
+  padding: var(--div-padding);
 }
 
 .row-1 .left .img{
@@ -325,31 +327,26 @@
   height: 100%;
   object-fit: cover;  /*rad 1 bild*/
   border-radius: 2rem;
-  padding: 2em;
-  border-radius: 2rem;
+  padding: var(--div-padding);
+  margin: var(--div-margin);
 }
 
 .row-1 .right{
   display: flex;
   align-items: center;  /*höger culumn form*/
-  padding: 1rem;
+
 }
 
 .row-1 .right .content{
-  margin-left: 0.5em;
-  padding: 2em;                           /*höger culumn conten layout*/
+  padding: var(--div-padding);                           /*höger culumn conten layout*/
   border-radius: .5rem;
   box-shadow: 10px 10px 30px var(--clr-shadow);
-}
-.row-1 .right .content p{
-  font-size: 16px;
-  line-height: 26px;                      /*text layput*/
-  padding-bottom: 15px;
 }
 
 @media (max-width: 991px){
   .row-1 .right .content{
-    padding-left: 0;
+    padding:var(--div-padding);
+    margin: var(--div-margin);
   }
 }
 @media (max-width: 768px ){               /*meadia breakpoint mobile */
@@ -366,24 +363,24 @@
 }
 /*rad 2*/
 .row-2{
- padding: 1rem;
- margin-top: 5rem;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*responsiv grid*/
-  grid-gap: 1rem;
-  align-items: center;
+ padding: var(--div-padding);
+ margin-top: 4rem;
+ display: grid;
+ width: 100%;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*responsiv grid*/
+ grid-gap: 1rem;
+ align-items: center;
   
 }
 
 .content-2{
-  padding: 2em;
+  padding: var(--div-padding);
   border-radius: .5rem;                               /*content box layout*/
   box-shadow: 10px 10px 30px var(--clr-shadow);  
 }
 
 .row-2 .vänster{
-  padding: 1rem;               /*vänster culumn padding*/
+  padding:0;               /*vänster culumn padding*/
 }
 
 .row-2 .vänster img{
@@ -399,7 +396,7 @@
 }
 
 .row-2 .mitten{
-padding: 1rem;              /* mitten culumn padding*/ 
+padding: 0;              /* mitten culumn padding*/ 
 
 }
 
@@ -416,7 +413,7 @@ padding: 1rem;              /* mitten culumn padding*/
 }
 
 .row-2 .höger{
- padding: 1rem;              /*höger culumn padding*/
+ padding: 0;              /*höger culumn padding*/
 }
 
 .row-2 .höger img{
