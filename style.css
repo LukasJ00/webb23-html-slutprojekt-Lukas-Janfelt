@@ -247,8 +247,7 @@
     height: 100%;
     object-fit: cover;                /* gallery bilder*/
     border-radius: 2rem;
-    padding: var(--div-padding);
-    margin: var(--div-margin);
+    align-items: center;
     }
 
     .gallery-rubrik{
@@ -260,9 +259,10 @@
     .gallery-text{
         display: flex;
         align-items: center; 
-        justify-content: left;
-        padding: var(--div-padding);     
-        max-width: 40rem;             /*gallery text box*/
+        justify-content: center;
+        padding: var(--div-padding);
+        margin: var(--div-margin);     
+        max-width: 100%;             /*gallery text box*/
         border-radius: .5rem;
         box-shadow: 10px 10px 30px var(--clr-shadow);
       
@@ -280,6 +280,7 @@
         display: grid;
         place-items: center;
         width: 90%;
+        grid-gap: 1rem;
         grid-template-columns: 1fr;
         justify-content: center;
       }
